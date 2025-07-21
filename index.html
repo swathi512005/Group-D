@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Add viewport for responsiveness -->
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #2d5fff;
+    }
+
+    .card {
+      max-width: 500px;
+      width: 100%;
+      margin: auto;
+    }
+
+    @media (max-width: 576px) {
+      .container {
+        padding: 0 10px;
+      }
+
+      .card {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="card p-4">
+      <h4>Create Your Account</h4>
+      <form id="signupForm">
+        <div class="mb-3">
+          <label>First Name <span style="color: red;">*</span> 
+</label>
+          <input type="text" id="firstName" class="form-control">
+          <small class="text-danger" id="errorFirstName"></small>
+        </div>
+
+        <div class="mb-3">
+          <label>Last Name <span style="color: red;">*</span></label>
+          <input type="text" id="lastName" class="form-control">
+          <small class="text-danger" id="errorLastName"></small>
+        </div>
+
+        <div class="mb-3">
+          <label>Email Id <span style="color: red;">*</span></label>
+          <input type="text" id="email" class="form-control">
+          <small class="text-danger" id="errorEmail"></small>
+        </div>
+
+        <div class="mb-3">
+          <label>Phone Number <span style="color: red;">*</span></label>
+          <input type="text" id="phone" class="form-control">
+          <small class="text-danger" id="errorPhone"></small>
+        </div>
+
+        <div class="mb-3">
+          <label>Password <span style="color: red;">*</span></label>
+          <input type="password" id="password" class="form-control">
+          <small class="text-danger" id="errorPassword"></small>
+        </div>
+
+        <div class="mb-3">
+          <label>Confirm Password <span style="color: red;">*</span></label>
+          <input type="password" id="confirmPassword" class="form-control">
+          <small class="text-danger" id="errorConfirmPassword"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
